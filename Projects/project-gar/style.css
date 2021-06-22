@@ -41,7 +41,7 @@ h2 {
   margin: 3rem auto;
 }
 
-/* Ratko */
+
 
 /* navigation bar */
 .nav {
@@ -284,9 +284,8 @@ header {
 
 /* GUIDED TOURS SECTION */
 
-* {
-  /* outline: 1px solid red; */
-}
+
+
 
 .Guided-tours__section {
   background: rgb(104, 123, 136);
@@ -499,7 +498,7 @@ header {
   transform: scale(1.02);
 }
 
-/* Gary */
+
 
 .farm-shop {
   background-color: #eeeeee;
