@@ -46,32 +46,10 @@ app.use(express.urlencoded({ extended: true }))
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html')
 })
+
+
+
 app.post('/', (req, res) => {
-  // let name = users.find(name => {
-  //   if (name.first_name == req.body.username && name.password == req.body.password) {
-  //     res.send(`Welcome ${req.body.username}`)
-  //     return
-  //   } else {
-  //     res.send('Invalid username or password')
-  //     return
-  //   }
-
-  // })
-
-
-  // users.find(name => {
-  //   switch (res) {
-  //     case name.first_name == req.body.username && name.password == req.body.password:
-  //       res.send(`Welcome ${req.body.username}`)
-  //       break;
-  //     case name.first_name !== req.body.username && name.password !== req.body.password:
-  //       res.send('Invalid username or password')
-  //     default:
-  //       break;
-  //   }
-  // })
-
-
   const username = req.body.username;
   const pwd = req.body.password
   const matchesUser = (user) => {
@@ -84,28 +62,7 @@ app.post('/', (req, res) => {
     res.send('Login failed');
   }
 
-
-
-})
-
-
-
-// let name;
-// app.get('/', (req, res) => {
-//   res.sendFile(__dirname + '/public/index.html')
-
-// })
-
-// app.post('/', (req, res) => {
-//   res.send(name = users.find(user => {
-//     if (user.first_name == req.body.username && user.password == req.body.password) {
-//       // return (user.first_name && user.password)
-//       return res.send(`Welcome ${req.body.username}`)
-//     } else {
-//       return res.send('Invalid username or password')
-//     }
-//   }))
-// })
+});
 
 
 
