@@ -1,0 +1,21 @@
+{
+    "plugins": ["@babel/syntax-dynamic-import", "@babel/plugin-transform-runtime"],
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false
+            }
+        ]
+    ]
+}
+
+
+/* 
+
+1. npm install --save-dev @babel/plugin-transform-runtime
+2. Including this in .babelrc
+        "@babel/plugin-transform-runtime"
+
+
+*/
